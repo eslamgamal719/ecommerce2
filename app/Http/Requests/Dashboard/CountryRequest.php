@@ -26,6 +26,7 @@ class CountryRequest extends FormRequest
         return [
             'country_name_ar' => 'required',
             'country_name_en' => 'required',
+            'currency' => 'required',
             'mob' => 'required',
             'code' => 'required',
             'logo' => validate_image(),

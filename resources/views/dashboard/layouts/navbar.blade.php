@@ -122,7 +122,7 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('cities')[1] }}">
                   <li class=""><a href="{{aurl('cities')}}"><i class="fa fa-flag"></i> {{__('admin.cities')}}</a></li>
                   <li class=""><a href="{{aurl('cities/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
@@ -136,7 +136,7 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('states')[1] }}">
                   <li class=""><a href="{{aurl('states')}}"><i class="fa fa-flag"></i> {{__('admin.states')}}</a></li>
                   <li class=""><a href="{{aurl('states/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
@@ -150,7 +150,7 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('departments')[1] }}">
                   <li class=""><a href="{{aurl('departments')}}"><i class="fa fa-list"></i> {{__('admin.departments')}}</a></li>
                   <li class=""><a href="{{aurl('departments/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
@@ -164,11 +164,12 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('trademarks')[1] }}">
                   <li class=""><a href="{{aurl('trademarks')}}"><i class="fa fa-cube"></i> {{__('admin.trademarks')}}</a></li>
                   <li class=""><a href="{{aurl('trademarks/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
           </li>
+
 
           <li class="treeview {{ active_menu('manufacturers')[0] }}">
               <a href="#">
@@ -177,11 +178,12 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('manufacturers')[1] }}">
                   <li class=""><a href="{{aurl('manufacturers')}}"><i class="fa fa-user"></i> {{__('admin.manufacturers')}}</a></li>
                   <li class=""><a href="{{aurl('manufacturers/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
           </li>
+
 
           <li class="treeview {{ active_menu('shippings')[0] }}">
               <a href="#">
@@ -190,23 +192,77 @@
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('shippings')[1] }}">
                   <li class=""><a href="{{aurl('shippings')}}"><i class="fa fa-truck"></i> {{__('admin.shippings')}}</a></li>
                   <li class=""><a href="{{aurl('shippings/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
           </li>
 
 
-          <li class="treeview {{ active_menu('shippings')[0] }}">
+          <li class="treeview {{ active_menu('malls')[0] }}">
               <a href="#">
                   <i class="fa fa-building"></i> <span>{{__('admin.malls')}}</span>
                   <span class="pull-right-container">
               <i class="fa fa-angle-right pull-left"></i>
             </span>
               </a>
-              <ul class="treeview-menu" style="{{ active_menu('countries')[1] }}">
+              <ul class="treeview-menu" style="{{ active_menu('malls')[1] }}">
                   <li class=""><a href="{{aurl('malls')}}"><i class="fa fa-building"></i> {{__('admin.malls')}}</a></li>
                   <li class=""><a href="{{aurl('malls/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
+              </ul>
+          </li>
+
+
+          <li class="treeview {{ active_menu('colors')[0] }}">
+              <a href="#">
+                  <i class="fa fa-paint-brush"></i> <span>{{__('admin.colors')}}</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu" style="{{ active_menu('colors')[1] }}">
+                  <li class=""><a href="{{aurl('colors')}}"><i class="fa fa-paint-brush"></i> {{__('admin.colors')}}</a></li>
+                  <li class=""><a href="{{aurl('colors/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
+              </ul>
+          </li>
+
+
+          <li class="treeview {{ active_menu('sizes')[0] }}">
+              <a href="#">
+                  <i class="fa fa-info-circle"></i> <span>{{__('admin.sizes')}}</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu" style="{{ active_menu('sizes')[1] }}">
+                  <li class=""><a href="{{aurl('sizes')}}"><i class="fa fa-info-circle"></i> {{__('admin.sizes')}}</a></li>
+                  <li class=""><a href="{{aurl('sizes/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
+              </ul>
+          </li>
+
+          <li class="treeview {{ active_menu('weights')[0] }}">
+              <a href="#">
+                  <i class="fa fa-briefcase"></i> <span>{{__('admin.weights')}}</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu" style="{{ active_menu('weights')[1] }}">
+                  <li class=""><a href="{{aurl('weights')}}"><i class="fa fa-briefcase"></i> {{__('admin.weights')}}</a></li>
+                  <li class=""><a href="{{aurl('weights/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
+              </ul>
+          </li>
+
+          <li class="treeview {{ active_menu('products')[0] }}">
+              <a href="#">
+                  <i class="fa fa-tag"></i> <span>{{__('admin.products')}}</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu" style="{{ active_menu('products')[1] }}">
+                  <li class=""><a href="{{aurl('products')}}"><i class="fa fa-tag"></i> {{__('admin.products')}}</a></li>
+                  <li class=""><a href="{{aurl('products/create')}}"><i class="fa fa-plus"></i> {{__('admin.add')}}</a></li>
               </ul>
           </li>
 

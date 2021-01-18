@@ -1,0 +1,41 @@
+@extends('dashboard.index')
+@section('content')
+
+
+    <div class="box">
+
+        <div class="box-header">
+            <h3 class="box-title">{{ $title }}</h3>
+        </div>
+
+        @include('dashboard.layouts.message')
+
+        <div class="box-body">
+            {!! Form::open(['url' => aurl('colors')]) !!}
+
+
+                <div class="form-group">
+                    {!! Form::label('name_ar', __('admin.name_ar')) !!}
+                    {!! Form::text('name_ar', old('name_ar'), ['class' => 'form-control']) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('name_en', __('admin.name_en')) !!}
+                    {!! Form::text('name_en', old('name_en'), ['class' => 'form-control']) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('color', __('admin.color')) !!}
+                    {!! Form::color('color', old('color'), ['class' => 'form-control']) !!}
+                </div>
+
+
+            {!! Form::submit(__('admin.add'), ['class' => 'btn btn-primary']) !!}
+            {!! Form::close() !!}
+
+        </div><!-- end of body -->
+
+    </div><!-- end of box -->
+
+
+@endsection

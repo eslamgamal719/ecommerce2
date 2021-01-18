@@ -2,14 +2,9 @@
 
 namespace App\DataTables;
 
-use App\Admin;
 use App\Models\Manufacturer;
-use App\Models\TradeMark;
-use Yajra\DataTables\Html\Button;
-use Yajra\DataTables\Html\Column;
-use Yajra\DataTables\Html\Editor\Editor;
-use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
+
 
 class ManufacturerDatatable extends DataTable
 {

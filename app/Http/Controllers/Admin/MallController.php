@@ -2,25 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\DataTables\CountryDatatable;
-use App\DataTables\MallDatatable;
-use App\DataTables\ManufacturerDatatable;
-use App\DataTables\TradeMarkDatatable;
-use App\Http\Controllers\Controller;
-use App\DataTables\AdminDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
-use App\Admin;
-use App\Http\Requests\Dashboard\CountryRequest;
-use App\Http\Requests\Dashboard\EditAdminRequest;
-use App\Http\Requests\Dashboard\MallRequest;
-use App\Http\Requests\Dashboard\ManufacturerRequest;
-use App\Http\Requests\Dashboard\TradeMarkRequest;
-use App\Models\Country;
 use App\Models\Mall;
-use App\Models\Manufacturer;
-use App\Models\TradeMark;
-use Illuminate\Http\Request;
+use App\DataTables\MallDatatable;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Dashboard\MallRequest;
+
 
 class MallController extends Controller
 {

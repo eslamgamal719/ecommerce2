@@ -2,20 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\DataTables\CityDatatable;
-use App\DataTables\CountryDatatable;
-use App\Http\Controllers\Controller;
-use App\DataTables\AdminDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
-use App\Admin;
-use App\Http\Requests\Dashboard\CityRequest;
-use App\Http\Requests\Dashboard\CountryRequest;
-use App\Http\Requests\Dashboard\DepartmentRequest;
-use App\Http\Requests\Dashboard\EditAdminRequest;
-use App\Models\City;
 use App\Models\Department;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Dashboard\DepartmentRequest;
+
 
 class DepartmentController extends Controller
 {

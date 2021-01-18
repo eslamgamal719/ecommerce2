@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Admin;
-use App\Http\Controllers\Controller;
-use App\Mail\AdminResetPassword;
+use App\Admin;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
+use App\Mail\AdminResetPassword;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\Controller;
+
 
 class AdminAuth extends Controller
 {

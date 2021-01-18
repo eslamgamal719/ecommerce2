@@ -224,6 +224,8 @@
 <link rel="stylesheet" href="{{asset('assets/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{asset('assets/admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 <script>
     $.widget.bridge('uibutton', $.ui.button)
@@ -260,6 +262,10 @@
 <script src="{{asset('assets/admin/jstree/jstree.js') }}"></script>
 <script src="{{asset('assets/admin/jstree/jstree.checkbox.js') }}"></script>
 <script src="{{asset('assets/admin/jstree/jstree.wholerow.js') }}"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ar.min.js"></script>
 
 
 

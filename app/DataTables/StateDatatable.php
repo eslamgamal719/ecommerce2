@@ -2,15 +2,9 @@
 
 namespace App\DataTables;
 
-use App\Admin;
-
-use App\Models\City;
 use App\Models\State;
-use Yajra\DataTables\Html\Button;
-use Yajra\DataTables\Html\Column;
-use Yajra\DataTables\Html\Editor\Editor;
-use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
+
 
 class StateDatatable extends DataTable
 {

@@ -2,22 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\DataTables\CityDatatable;
-use App\DataTables\CountryDatatable;
-use App\DataTables\StateDatatable;
-use App\Http\Controllers\Controller;
-use App\DataTables\AdminDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
-use App\Admin;
-use App\Http\Requests\Dashboard\CityRequest;
-use App\Http\Requests\Dashboard\CountryRequest;
-use App\Http\Requests\Dashboard\EditAdminRequest;
-use App\Http\Requests\Dashboard\StateRequest;
+use Form;
 use App\Models\City;
 use App\Models\State;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Form;
+use App\DataTables\StateDatatable;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Dashboard\StateRequest;
+
 
 class StateController extends Controller
 {

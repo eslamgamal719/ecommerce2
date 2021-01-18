@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use App\DataTables\AdminDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
 use App\Admin;
+use App\DataTables\AdminDatatable;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Dashboard\AdminRequest;
 use App\Http\Requests\Dashboard\EditAdminRequest;
-use Illuminate\Http\Request;
+
 
 class AdminController extends Controller
 {

@@ -2,16 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Country;
 use App\DataTables\CountryDatatable;
 use App\Http\Controllers\Controller;
-use App\DataTables\AdminDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
-use App\Admin;
-use App\Http\Requests\Dashboard\CountryRequest;
-use App\Http\Requests\Dashboard\EditAdminRequest;
-use App\Models\Country;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Dashboard\CountryRequest;
+
 
 class CountryController extends Controller
 {

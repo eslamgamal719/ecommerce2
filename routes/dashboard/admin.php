@@ -56,6 +56,24 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
         Route::resource('malls', 'MallController');
         Route::delete('malls/destroy/all', 'MallController@multi_delete');
 
+        //colors routes
+        Route::resource('colors', 'ColorController');
+        Route::delete('colors/destroy/all', 'ColorController@multi_delete');
+
+        //sizes routes
+        Route::resource('sizes', 'SizeController');
+        Route::delete('sizes/destroy/all', 'SizeController@multi_delete');
+
+        //weights routes
+        Route::resource('weights', 'WeightController');
+        Route::delete('weights/destroy/all', 'WeightController@multi_delete');
+
+        //products routes
+        Route::resource('products', 'ProductController');
+        Route::delete('products/destroy/all', 'ProductController@multi_delete');
+        Route::post('upload/image/{pid}', 'ProductController@upload_file');
+        Route::post('delete/image', 'ProductController@delete_file');
+
         //departments routes
         Route::resource('departments', 'DepartmentController');
 

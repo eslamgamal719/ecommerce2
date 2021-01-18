@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use App\DataTables\UserDatatable;
-use App\Http\Requests\Dashboard\AdminRequest;
-use App\Http\Requests\Dashboard\EditUserRequest;
-use App\Http\Requests\Dashboard\UserRequest;
 use App\User;
-use App\Http\Requests\Dashboard\EditAdminRequest;
-use Illuminate\Http\Request;
+use App\DataTables\UserDatatable;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Dashboard\UserRequest;
+use App\Http\Requests\Dashboard\EditUserRequest;
+
 
 class UserController extends Controller
 {

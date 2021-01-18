@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Up;
+use App\Models\Setting;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Dashboard\ImageRequest;
-use App\Models\Setting;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Up;
+
 
 class Settings extends Controller
 {
