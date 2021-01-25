@@ -52,8 +52,8 @@
     <hr />
 
     <div class="form-group col-md-4 col-lg-4 col-sm-4 col-xs-12">
-        {!! Form::label('offer_price', __('admin.offer_price')) !!}
-        {!! Form::text('offer_price', $product->offer_price, ['class' => 'form-control', 'placeholder' => __('admin.offer_price')]) !!}
+        {!! Form::label('price_offer', __('admin.price_offer')) !!}
+        {!! Form::text('price_offer', $product->price_offer, ['class' => 'form-control', 'placeholder' => __('admin.price_offer')]) !!}
     </div>
 
     <div class="form-group col-md-4 col-lg-4 col-sm-4 col-xs-12">

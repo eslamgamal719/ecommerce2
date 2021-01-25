@@ -96,8 +96,7 @@ class CountryDatatable extends DataTable
                 'printable' => false,
                 'searchable' => false,
                 'orderable' => false,
-            ],
-            [
+            ], [
                 'name' => 'id',
                 'data' => 'id',
                 'title' => '#',

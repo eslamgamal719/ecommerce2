@@ -14,7 +14,6 @@ class Product extends Model
         'title',
         'content',
         'photo',
-        'other_data',
         'stock',
         'price',
         'status',
@@ -29,6 +28,7 @@ class Product extends Model
         'manu_id',
         'color_id',
         'size_id',
+        'size',
         'weight',
         'weight_id',
         'currency_id'
@@ -37,5 +37,21 @@ class Product extends Model
 
     public function files() {
         return $this->hasMany(File::class, 'relation_id', 'id')->where('file_type', 'product');
+    }
+
+    public function other_data() {
+        return $this->hasMany(OtherData::class, 'product_id', 'id');
+    }
+
+    public function malls() {
+        return $this->belongsToMany(Mall::class, 'mall_products');
+    }
+
+    public function otherData() {
+        return $this->hasMany(OtherData::class, 'product_id');
+    }
+
+    public function related() {
+        return $this->hasMany(RelatedProduct::class, 'product_id');
     }
 }

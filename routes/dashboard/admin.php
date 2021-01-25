@@ -73,6 +73,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
         Route::delete('products/destroy/all', 'ProductController@multi_delete');
         Route::post('upload/image/{pid}', 'ProductController@upload_file');
         Route::post('delete/image', 'ProductController@delete_file');
+        Route::post('update/image/{pid}', 'ProductController@update_product_image');
+        Route::post('delete/product/image/{pid}', 'ProductController@delete_main_image');
+        Route::post('load/weight/size', 'ProductController@prepare_weight_size');
+        Route::post('products/copy/{pid}', 'ProductController@copy_product');
+        Route::post('products/search', 'ProductController@product_search');
+
 
         //departments routes
         Route::resource('departments', 'DepartmentController');

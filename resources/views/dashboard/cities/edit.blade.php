@@ -28,7 +28,6 @@
                 {!! Form::select('country_id', App\Models\Country::pluck('country_name_' . session('lang'), 'id'), $city->country_id, ['class' => 'form-control']) !!}
             </div>
 
-
             {!! Form::submit(__('admin.add'), ['class' => 'btn btn-primary']) !!}
             {!! Form::close() !!}
 

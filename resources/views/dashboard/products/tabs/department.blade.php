@@ -4,7 +4,7 @@
         $(document).ready(function() {
             $('#jstree').jstree({
                 "core" : {
-                    'data' : {!! load_dep($product->id) !!},
+                    'data' : {!! load_dep($product->department_id) !!},
 
                     "themes" : {
                         "variant" : "large"
@@ -22,7 +22,24 @@
             for(i=0, j= data.selected.length; i < j; i++) {
                 r.push(data.instance.get_node(data.selected[i]).id);
             }
-            $('.department_id').val(r.join(', '));
+
+            var depart_id = r.join(', ');
+            $('.department_id').val(depart_id);
+
+            $.ajax({
+                url: "{{ aurl('load/weight/size') }}",
+                dataType: 'html',
+                type: 'post',
+                data: {
+                    _token: '{{csrf_token()}}',
+                    dep_id: depart_id,
+                    product_id: '{{$product->id}}'
+                },
+                success: function(data) {
+                    $('.size_weight').html(data);
+                    $('.info-data').removeClass('hidden');
+                }
+            });
         });
     </script>
 @endpush
@@ -31,6 +48,6 @@
     <h3>{{ trans('admin.department') }}</h3>
 
     <div id="jstree"></div>
-    <input type="hidden" name="department_id" class="department_id" value="{{ $product->id }}">
+    <input type="hidden" name="department_id" class="department_id" value="">
 
 </div>

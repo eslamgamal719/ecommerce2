@@ -18,16 +18,15 @@ class CreateProductsTable extends Migration
             $table->string('title')->nullable();
             $table->longText('content')->nullable();
             $table->string('photo')->nullable();
-            $table->longText('other_data')->nullable();
             $table->integer('stock')->default(0);
-            $table->decimal('price', 5, 2)->default(0);
+            $table->decimal('price', 7, 2)->default(0);
             $table->enum('status', ['pending', 'refused', 'active'])->default('pending');
             $table->longText('reason')->nullable();  //reason of being refused
 
             $table->date('start_at')->nullable();  //start and end of showing the product
             $table->date('end_at')->nullable();
 
-            $table->decimal('price_offer', 5, 2)->default(0);
+            $table->decimal('price_offer', 7, 2)->default(0);
             $table->date('start_offer_at')->nullable();
             $table->date('end_offer_at')->nullable();
 
@@ -40,12 +39,10 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('manu_id')->nullable();
             $table->foreign('manu_id')->references('id')->on('manufacturers')->onDelete('cascade');
 
-           /* $table->unsignedBigInteger('mall_id')->nullable();
-            $table->foreign('mall_id')->references('id')->on('malls')->onDelete('cascade');*/
-
             $table->unsignedBigInteger('color_id')->nullable();
             $table->foreign('color_id')->references('id')->on('colors')->onDelete('cascade');
 
+            $table->string('size')->nullable();
             $table->unsignedBigInteger('size_id')->nullable();
             $table->foreign('size_id')->references('id')->on('sizes')->onDelete('cascade');
 
