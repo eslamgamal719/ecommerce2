@@ -17,7 +17,6 @@ class SizeController extends Controller
      */
     public function index(SizeDatatable $size)
     {
-
         return $size->render('dashboard.sizes.index', ['title' => __('admin.sizes')]);
     }
 

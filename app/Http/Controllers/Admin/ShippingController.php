@@ -18,7 +18,6 @@ class ShippingController extends Controller
      */
     public function index(ShippingDatatable $shipping)
     {
-
         return $shipping->render('dashboard.shippings.index', ['title' => __('admin.shippings')]);
     }
 

@@ -11,7 +11,8 @@ use App\Http\Requests\Dashboard\ImageRequest;
 class Settings extends Controller
 {
 
-     public function settings() {
+     public function settings()
+     {
          return view('dashboard.settings', ['title' => __('admin.settings')]);
      }
 

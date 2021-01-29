@@ -18,7 +18,6 @@ class ManufacturerController extends Controller
      */
     public function index(ManufacturerDatatable $manufacturer)
     {
-
         return $manufacturer->render('dashboard.manufacturers.index', ['title' => __('admin.manufacturers')]);
     }
 

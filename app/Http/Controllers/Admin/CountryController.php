@@ -18,7 +18,6 @@ class CountryController extends Controller
      */
     public function index(CountryDatatable $country)
     {
-
         return $country->render('dashboard.countries.index', ['title' => __('admin.countries')]);
     }
 
@@ -56,7 +55,6 @@ class CountryController extends Controller
         session()->flash('success', __('admin.record_added'));
         return redirect(aurl('countries'));
     }
-
 
 
     /**

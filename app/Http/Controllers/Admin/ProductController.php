@@ -2,20 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\Dashboard\ProductRequest;
-use App\Models\Country;
-use App\File as FileTbl;  //to avoid conflict with File Facades
-use App\DataTables\ProductDatatable;
-use App\Http\Controllers\Controller;
-use App\Models\MallProduct;
-use App\Models\OtherData;
-use App\Models\Product;
-use App\Models\RelatedProduct;
 use App\Models\Size;
 use App\Models\Weight;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
+use App\Models\Product;
+use App\File as FileTbl;  //to avoid conflict with File Facades
+use App\Models\OtherData;
+use App\Models\MallProduct;
 use Illuminate\Support\Str;
+use App\Models\RelatedProduct;
+use Illuminate\Support\Facades\File;
+use App\DataTables\ProductDatatable;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\Dashboard\ProductRequest;
 
 
 class ProductController extends Controller

@@ -17,7 +17,6 @@ class ColorController extends Controller
      */
     public function index(ColorDatatable $color)
     {
-
         return $color->render('dashboard.colors.index', ['title' => __('admin.colors')]);
     }
 

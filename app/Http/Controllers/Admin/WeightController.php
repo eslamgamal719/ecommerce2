@@ -17,7 +17,6 @@ class WeightController extends Controller
      */
     public function index(WeightDatatable $weight)
     {
-
         return $weight->render('dashboard.weights.index', ['title' => __('admin.weights')]);
     }
 

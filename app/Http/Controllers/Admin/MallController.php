@@ -18,7 +18,6 @@ class MallController extends Controller
      */
     public function index(MallDatatable $mall)
     {
-
         return $mall->render('dashboard.Malls.index', ['title' => __('admin.malls')]);
     }
 

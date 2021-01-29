@@ -18,7 +18,6 @@ class TradeMarkController extends Controller
      */
     public function index(TradeMarkDatatable $trademark)
     {
-
         return $trademark->render('dashboard.trademarks.index', ['title' => __('admin.trademarks')]);
     }
 
